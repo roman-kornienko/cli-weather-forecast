@@ -1,0 +1,25 @@
+{
+  "name": "cli-weather-forecast",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather",
+    "forecast"
+  ],
+  "author": "rkornienko",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://"
+  },
+  "bugs": {
+    "email": "kornienko.romansky@gmail.com"
+  }
+}
