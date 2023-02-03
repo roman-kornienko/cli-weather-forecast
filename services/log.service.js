@@ -13,7 +13,7 @@ export const printHelp = () => {
     console.log(dedent
         `${chalk.bgCyan('HELP:')} 
         Without parameters: show weather
-        -s [CITY] set city
+        -c [CITY] set city
         -h show help
         -t [API_KEY] set token
         `
