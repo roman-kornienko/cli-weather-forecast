@@ -19,3 +19,13 @@ export const printHelp = () => {
         `
     );
 };
+
+export const printWeather = (res) => {
+    console.log(dedent
+        `${chalk.bgYellow('WEATHER:')} 
+        ${res.weather[0].description}
+        tempreture is ${res.main.temp}
+        feels like ${res.main.feels_like}
+        `
+    );
+};

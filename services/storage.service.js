@@ -1,9 +1,13 @@
 import { homedir } from 'os';
 import { join } from 'path';
 import { promises } from 'fs';
-import { printSuccess } from './log.service.js';
 
 const filePath = join(homedir(), 'weather-data.json');
+
+export const DATA_DICTIONARY = {
+    token: 'token',
+    city: 'city'
+};
 
 const isExist = async (path) => {
     try {
@@ -30,7 +34,7 @@ export const saveKeyValue = async (key, value) => {
 
 export const getKeyValue = async (key) => {
     if (await isExist(filePath)) {
-        data = await readFile(filePath);
+        const data = await readFile(filePath);
         return data[key];
     }
     return undefined;

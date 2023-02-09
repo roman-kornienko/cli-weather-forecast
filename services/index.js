@@ -1,8 +1,11 @@
-import { printError, printSuccess, printHelp } from './log.service.js';
-import { saveKeyValue } from './storage.service.js';
-import { saveToken } from './saveToken.js';
+import { printHelp } from './log.service.js';
+import { saveData } from './saveData.js';
+import getForecast from './api.sevice.js';
+import { DATA_DICTIONARY } from './storage.service.js';
 
 export {
     printHelp,
-    saveToken,
+    saveData,
+    getForecast,
+    DATA_DICTIONARY
 };
